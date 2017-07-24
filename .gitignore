@@ -1,0 +1,11 @@
+node_modules/
+dump/
+.idea/
+.DS_Store
+NavBanner.jsx
+VideoBillboard.jsx
+settings.json
+npm-debug.log
+.vscode/
+release.json
+development.json
