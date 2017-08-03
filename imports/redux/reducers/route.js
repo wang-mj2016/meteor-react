@@ -4,6 +4,7 @@ const initialState = {
   current: '/',
   root: '/',
   // 我的测试页面
+  mytest: '/mytest',
   mingjuan: '/mingjuan',
   counter: 'counter',
 };

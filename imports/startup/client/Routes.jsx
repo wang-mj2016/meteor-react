@@ -11,8 +11,9 @@ import store from '../../redux/store';
 import MainLayout from '../../ui/layouts/Main.jsx';
 
 import MingJuanContainer from '../../ui/containers/MingJuanContainer.jsx';
-import MyTestContainer from '../../ui/containers/MyTestContainer.jsx';
+import ArticleContainer from '../../ui/containers/ArticleContainer.jsx';
 import CounterContainer from '../../ui/containers/CounterContainer.jsx';
+import MyTestContainer from '../../ui/containers/MyTestContainer.jsx';
 
 const history = syncHistoryWithStore(browserHistory, store);
 const route = store.getState().route;
@@ -27,9 +28,10 @@ Meteor.startup(() => {
             <IndexRoute component={MingJuanContainer} />
             {/* 下边的子页面*/}
             <Route path={route.mingjuan}>
-              <IndexRoute component={MyTestContainer} />
+              <IndexRoute component={ArticleContainer} />
               <Route path={route.counter} component={CounterContainer} />
             </Route>
+            <Route path={route.mytest} component={MyTestContainer} />
           </Route>
         </Router>
       </Provider>
